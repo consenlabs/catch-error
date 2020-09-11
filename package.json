@@ -1,6 +1,6 @@
 {
   "name": "@consenlabs/catch-error",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
@@ -10,9 +10,6 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "typescript": "3.7.5"
-  },
   "scripts": {
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc --emitDeclarationOnly",
@@ -42,7 +39,8 @@
     "@babel/core": "^7.11.6",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
-    "@babel/preset-typescript": "^7.10.4"
+    "@babel/preset-typescript": "^7.10.4",
+    "typescript": "3.7.5"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

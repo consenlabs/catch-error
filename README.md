@@ -7,7 +7,7 @@ for yarn:
 ```bash
 registry=https://registry.yarnpkg.com/
 
-@consenLabs:registry=https://npm.pkg.github.com
+@consenlabs:registry=https://npm.pkg.github.com
 always-auth=true
 ```
 
@@ -16,7 +16,7 @@ for npm :
 ```bash
 registry=https://registry.npmjs.org/
 
-@consenLabs:registry=https://npm.pkg.github.com
+@consenlabs:registry=https://npm.pkg.github.com
 always-auth=true
 ```
 
