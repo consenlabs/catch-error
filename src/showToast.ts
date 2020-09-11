@@ -1,6 +1,6 @@
 export enum TOAST_TYPE {
   INFO = 'info',
-  WARNNING = 'warning',
+  WARNING = 'warning',
   SUCCESS = 'success',
   LOADING = 'loading',
 }
@@ -28,9 +28,9 @@ const showToast = (params: ToastParams) => {
   const version = (window['imTokenAgent'] || '').split(':')[1]
   if ((<any>window).imToken.callAPI && version) {
     if (compareSemver(version, '2.6.0') >= 0) {
-      (<any>window).imToken.callAPI('native.toast', params)
+      ;(<any>window).imToken.callAPI('native.toast', params)
     } else {
-      (<any>window).imToken.callAPI('native.toastInfo', params.message)
+      ;(<any>window).imToken.callAPI('native.toastInfo', params.message)
     }
   }
 }

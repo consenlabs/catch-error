@@ -8,7 +8,6 @@ for yarn:
 registry=https://registry.yarnpkg.com/
 
 @consenLabs:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=13cce20c0b25c08e24d3df94b1c95a1e448e2233
 always-auth=true
 ```
 
@@ -18,7 +17,6 @@ for npm :
 registry=https://registry.npmjs.org/
 
 @consenLabs:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=13cce20c0b25c08e24d3df94b1c95a1e448e2233
 always-auth=true
 ```
 
@@ -31,7 +29,9 @@ npm i @babel/plugin-proposal-class-properties -D
 npm i @babel/plugin-proposal-decorators -D
 ```
 
-example:
+you may always write too much try...catch dirty code,now, catchError is an elegant way to replace this way
+
+For example:
 
 ```js
 import { catchError, TOAST_TYPE } from '@consenLabs/catch-error'
@@ -43,6 +43,7 @@ class Example {
   @catchError({
     toast: {
       message: 'some thing error',
+      type: TOAST_TYPE.WARNING,
     },
     handler: handleError,
   })
