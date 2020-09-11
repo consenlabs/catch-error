@@ -21,6 +21,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:consenlabs/catch-error.git"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
