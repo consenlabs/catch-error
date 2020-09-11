@@ -29,7 +29,15 @@ npm i @babel/plugin-proposal-class-properties -D
 npm i @babel/plugin-proposal-decorators -D
 ```
 
-you may always write too much try...catch dirty code,now, catchError is an elegant way to replace this way
+you may always write too much `try...catch` dirty code,now, `@catchError` is an elegant way to replace now.
+
+```js
+try {
+  doSomething()
+} catch (err) {
+  console.error(error)
+}
+```
 
 For example:
 
