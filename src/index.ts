@@ -1,21 +1,22 @@
 import { showToast, TOAST_TYPE } from './showToast'
 
 type OptionsProps = {
-  type: TOAST_TYPE
-  message?: string
-  align?: string
-  cb?: Function
+  toast: {
+    type?: TOAST_TYPE
+    message: string
+    align?: string
+    model?: 'banner' | 'alert'
+  }
+  handler?: Function
 }
 
 function handleError(options: OptionsProps, error: any) {
-  if (options.message) {
+  if (options.toast) {
     showToast({
-      message: options.message,
-      type: options.type,
-      algin: options.align,
+      ...options.toast,
     })
   }
-  options.cb && options.cb(error)
+  options.handler && options.handler(error)
 }
 
 function wrapHandleError(originalMethod: Function, options: OptionsProps) {
