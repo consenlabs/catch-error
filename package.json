@@ -1,6 +1,6 @@
 {
   "name": "@consenLabs/catch-error",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "typings": "dist/index.d.ts",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:consenlabs/catch-error.git"
+    "url": "git://github.com/consenlabs/catch-error.git"
   },
   "browserslist": {
     "production": [
